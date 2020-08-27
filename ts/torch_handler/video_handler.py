@@ -14,7 +14,7 @@ import torchvision.io as io
 import torchvision
 from PIL import Image
 from .base_handler import BaseHandler
-from ..utils import read_video
+from .utils.util import read_video
 
 class VideoHandler(BaseHandler, ABC):
     """
