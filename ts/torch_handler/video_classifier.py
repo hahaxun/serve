@@ -5,7 +5,7 @@ import torch
 import torch.nn.functional as F
 from torchvision import transforms
 
-from .vision_handler import VideoHandler
+from .video_handler import VideoHandler
 from ..utils.util  import map_class_to_label
 
 

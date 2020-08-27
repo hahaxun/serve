@@ -27,7 +27,7 @@ class VideoHandler(BaseHandler, ABC):
             with concurrent.futures.ProcessPoolExecutor() as executor:
                 results = []
                 #tmp add 5 frame at here
-                for result in zip(executor.map(read_video, [(data, i , 5) for i in range(5)]))
+                for result in zip(executor.map(read_video, [(data, i , 5) for i in range(5)])):
                     results.append(result[0][0])
             video_streams.append(torch.stack(results))
 
